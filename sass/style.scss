@@ -1,2 +1,67 @@
 @import "compass/reset";
 @import "compass/css3";
+@import "fontello";
+
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+
+$page-white: #FFFCF5;
+$page-grey: #F2EFE8;
+$page-blue: #81A9CA;
+header{
+    height: 100px;
+    background-color: $page-white;
+    .icon-twitter-bird{
+        color: $page-blue;
+    }
+}
+.bd{
+    background-color: $page-grey;
+    &:after {
+      content:"";
+      display:table;
+      clear:both;
+    }
+    .self-info{
+        width: 20%;
+        background-color: $page-blue;
+        .container{
+            width: 100%;
+        }
+    }
+    .main{
+        width: 60%;
+        .container{
+            padding: 10px;
+            margin: 10px;
+            nav{
+                height: 100px;
+                background-color: $page-white;
+                margin-bottom: 15px;
+            }
+            .tweets{
+                background-color: $page-white;
+                ul li{
+                    padding: 20px;
+                    border-bottom: 1px solid $page-grey;
+                }
+            }
+        }
+        
+    }
+    .trends{
+        width: 18%;
+        .container{
+            width: 100%;
+            background-color: $page-white;
+            padding: 20px;
+            .item{
+                color: $page-blue;
+            }
+        }
+    }
+}
