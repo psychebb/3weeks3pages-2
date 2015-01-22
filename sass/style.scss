@@ -13,8 +13,16 @@ $page-white: #FFFCF5;
 $page-grey: #F2EFE8;
 $page-blue: #81A9CA;
 header{
-    height: 100px;
     background-color: $page-white;
+    font-size: 24px;
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid $page-grey;
+    h1{
+        text-align: center;
+        position: absolute;
+        left: 50%;
+    }
     .icon-twitter-bird{
         color: $page-blue;
     }
@@ -29,6 +37,7 @@ header{
     .self-info{
         width: 20%;
         background-color: $page-blue;
+        height: 100%;
         .container{
             width: 100%;
         }
