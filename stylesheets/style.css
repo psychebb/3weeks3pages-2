@@ -66,8 +66,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: 'fontello';
-  src: url("../font/fontello.eot?66168236");
-  src: url("../font/fontello.eot?66168236#iefix") format("embedded-opentype"), url("../font/fontello.woff?66168236") format("woff"), url("../font/fontello.ttf?66168236") format("truetype"), url("../font/fontello.svg?66168236#fontello") format("svg");
+  src: url("../font/fontello.eot?69078083");
+  src: url("../font/fontello.eot?69078083#iefix") format("embedded-opentype"), url("../font/fontello.woff?69078083") format("woff"), url("../font/fontello.ttf?69078083") format("truetype"), url("../font/fontello.svg?69078083#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -77,7 +77,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?66168236#fontello') format('svg');
+    src: url('../font/fontello.svg?69078083#fontello') format('svg');
   }
 }
 */
@@ -173,6 +173,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* '' */
+/* line 64, ../sass/fontello.scss */
+.icon-user:before {
+  content: '\e80b';
+}
+
+/* '' */
+/* line 65, ../sass/fontello.scss */
+.icon-dot-3:before {
+  content: '\e80c';
+}
+
+/* '' */
 /* line 5, ../sass/style.scss */
 .pull-left {
   float: left;
@@ -183,7 +195,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: right;
 }
 
+/* line 11, ../sass/style.scss */
+img {
+  display: block;
+}
+
 /* line 15, ../sass/style.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 26, ../sass/style.scss */
 header {
   background-color: #FFFCF5;
   font-size: 24px;
@@ -191,72 +215,174 @@ header {
   padding: 10px 0;
   border-bottom: 1px solid #F2EFE8;
 }
-/* line 21, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 header h1 {
   text-align: center;
   position: absolute;
   left: 50%;
 }
-/* line 26, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
+header nav {
+  float: left;
+}
+/* line 40, ../sass/style.scss */
 header .icon-twitter-bird {
   color: #81A9CA;
 }
 
-/* line 30, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .bd {
   background-color: #F2EFE8;
 }
-/* line 32, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 .bd:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 37, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .bd .self-info {
   width: 20%;
   background-color: #81A9CA;
-  height: 100%;
+  text-align: center;
+  color: white;
 }
-/* line 41, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .bd .self-info .container {
   width: 100%;
+  padding: 20px 10px;
 }
-/* line 45, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
+.bd .self-info .container .self-img {
+  margin: 20px auto;
+  border-radius: 60px;
+}
+/* line 65, ../sass/style.scss */
+.bd .self-info .squares ul {
+  overflow: hidden;
+}
+/* line 68, ../sass/style.scss */
+.bd .self-info .squares li {
+  box-sizing: border-box;
+  width: 33.3%;
+  height: 33.3%;
+  float: left;
+  overflow: hidden;
+  padding: 5px;
+  border: 1px solid #AAA;
+}
+/* line 77, ../sass/style.scss */
+.bd .self-info .squares img {
+  max-height: 100%;
+  max-width: 100%;
+}
+/* line 84, ../sass/style.scss */
 .bd .main {
   width: 60%;
+  overflow: hidden;
 }
-/* line 47, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .bd .main .container {
   padding: 10px;
   margin: 10px;
 }
-/* line 50, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .bd .main .container nav {
-  height: 100px;
   background-color: #FFFCF5;
   margin-bottom: 15px;
 }
-/* line 55, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
+.bd .main .container nav .tips li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 98, ../sass/style.scss */
+.bd .main .container nav .tips li:hover {
+  background-color: #F2EFE8;
+}
+/* line 101, ../sass/style.scss */
+.bd .main .container nav .tips li:first-child {
+  border-bottom: 2px solid #81A9CA;
+}
+/* line 104, ../sass/style.scss */
+.bd .main .container nav .tips li div {
+  margin: 20px 0;
+}
+/* line 107, ../sass/style.scss */
+.bd .main .container nav .tips li .title {
+  display: block;
+}
+/* line 110, ../sass/style.scss */
+.bd .main .container nav .tips li .num {
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 113, ../sass/style.scss */
+.bd .main .container nav .tips li .num:hover {
+  text-decoration: underline;
+}
+/* line 119, ../sass/style.scss */
 .bd .main .container .tweets {
   background-color: #FFFCF5;
 }
-/* line 57, ../sass/style.scss */
-.bd .main .container .tweets ul li {
+/* line 121, ../sass/style.scss */
+.bd .main .container .tweets ul .tweet-item {
   padding: 20px;
   border-bottom: 1px solid #F2EFE8;
+  cursor: pointer;
 }
-/* line 65, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
+.bd .main .container .tweets ul .tweet-item:hover {
+  background-color: #eee;
+}
+/* line 128, ../sass/style.scss */
+.bd .main .container .tweets ul .tweet-item .self-img {
+  border-radius: 40px;
+  float: left;
+}
+/* line 132, ../sass/style.scss */
+.bd .main .container .tweets ul .tweet-item .tweet {
+  padding: 0 5px;
+  margin-left: 60px;
+}
+/* line 135, ../sass/style.scss */
+.bd .main .container .tweets ul .tweet-item .tweet .publish-time {
+  float: right;
+  color: #CCD6DD;
+}
+/* line 139, ../sass/style.scss */
+.bd .main .container .tweets ul .tweet-item .tweet .share {
+  margin-top: 10px;
+}
+/* line 141, ../sass/style.scss */
+.bd .main .container .tweets ul .tweet-item .tweet .share li {
+  font-size: 12px;
+  display: inline-block;
+  padding: 5px 5px 5px 0;
+  float: left;
+  color: #CCD6DD;
+}
+/* line 147, ../sass/style.scss */
+.bd .main .container .tweets ul .tweet-item .tweet .share li:last-child {
+  float: right;
+}
+/* line 150, ../sass/style.scss */
+.bd .main .container .tweets ul .tweet-item .tweet .share li:hover {
+  color: #81A9CA;
+}
+/* line 161, ../sass/style.scss */
 .bd .trends {
-  width: 18%;
+  width: 20%;
 }
-/* line 67, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .bd .trends .container {
   width: 100%;
   background-color: #FFFCF5;
   padding: 20px;
 }
-/* line 71, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .bd .trends .container .item {
   color: #81A9CA;
 }

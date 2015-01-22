@@ -8,10 +8,21 @@
 .pull-right{
     float: right;
 }
+img{
+    display: block;
+}
+.clearfix{
+    &:after {
+      content:"";
+      display:table;
+      clear:both;
+    }
+}
 
 $page-white: #FFFCF5;
 $page-grey: #F2EFE8;
 $page-blue: #81A9CA;
+$page-light-blue: #CCD6DD;
 header{
     background-color: $page-white;
     font-size: 24px;
@@ -22,6 +33,9 @@ header{
         text-align: center;
         position: absolute;
         left: 50%;
+    }
+    nav{
+        float: left;
     }
     .icon-twitter-bird{
         color: $page-blue;
@@ -37,33 +51,115 @@ header{
     .self-info{
         width: 20%;
         background-color: $page-blue;
-        height: 100%;
+        text-align: center;
+        color: white;
         .container{
             width: 100%;
+            padding: 20px 10px;
+            .self-img{
+                margin: 20px auto;
+                border-radius: 60px;
+            }
+        }
+        .squares{
+            ul{
+                overflow: hidden;
+            }
+            li{
+                box-sizing: border-box;
+                width: 33.3%;
+                height: 33.3%;
+                float: left;
+                overflow: hidden;
+                padding: 5px;
+                border: 1px solid #AAA;
+            }
+            img{
+                max-height: 100%;
+                max-width: 100%;
+                // display: inline;
+            }
         }
     }
     .main{
         width: 60%;
+        overflow: hidden;
         .container{
             padding: 10px;
             margin: 10px;
             nav{
-                height: 100px;
                 background-color: $page-white;
                 margin-bottom: 15px;
+                .tips li{
+                    float: left;
+                    width: 25%;
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $page-grey;
+                    }
+                    &:first-child{
+                        border-bottom: 2px solid $page-blue;
+                    }
+                    div{
+                        margin: 20px 0;
+                    }
+                    .title{
+                        display: block;
+                    }
+                    .num{
+                        font-weight: bold;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
             }
             .tweets{
                 background-color: $page-white;
-                ul li{
+                ul .tweet-item{
                     padding: 20px;
                     border-bottom: 1px solid $page-grey;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #eee;
+                    }
+                    .self-img{
+                        border-radius: 40px;
+                        float: left;
+                    }
+                    .tweet{
+                        padding: 0 5px;
+                        margin-left: 60px;
+                        .publish-time{
+                            float: right;
+                            color: $page-light-blue;
+                        }
+                        .share{
+                            margin-top: 10px;
+                            li{
+                                font-size: 12px;
+                                display: inline-block;
+                                padding: 5px 5px 5px 0;
+                                float: left;
+                                color: $page-light-blue;
+                                &:last-child{
+                                    float: right;
+                                }
+                                &:hover{
+                                    color: $page-blue;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
         
     }
     .trends{
-        width: 18%;
+        width: 20%;
         .container{
             width: 100%;
             background-color: $page-white;
