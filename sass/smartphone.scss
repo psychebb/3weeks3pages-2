@@ -1,47 +1,47 @@
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-/* Styles */
-.trends, .self-info{
-    display: none;
-}
-.bd .main{
-    width: 100%;
-    left: 0;
-    .container {
-        padding: 0;
-        margin: 10px 0;
-        .tweets{
-            background-color: white;
-        }
-        nav {
-            background-color: white;
-            .tips li{
-                display: block;
-                float: none;
-                width: 100%;
-                &:first-child{
-                    background-color: white;
-                }
-                div{
-                    margin: 0;
-                    padding: 10px 0;
+    /* Styles */
+    .trends, .self-info{
+        display: none;
+    }
+    .bd .main{
+        width: 100%;
+        left: 0;
+        .container {
+            padding: 0;
+            margin: 10px 0;
+            .tweets{
+                background-color: white;
+            }
+            nav {
+                background-color: white;
+                .tips li{
+                    display: block;
+                    float: none;
+                    width: 100%;
+                    &:first-child{
+                        background-color: white;
+                    }
+                    div{
+                        margin: 0;
+                        padding: 10px 0;
+                    }
                 }
             }
         }
     }
-}
-header{
-    background-color: white;
-    nav{
-        li:not(:first-child){
-            display: none;
+    header{
+        background-color: white;
+        nav{
+            li:not(:first-child){
+                display: none;
+            }
+        }
+        .options{
+            input{
+                display: none;
+            }
         }
     }
-    .options{
-        input{
-            display: none;
-        }
-    }
-}
 }
