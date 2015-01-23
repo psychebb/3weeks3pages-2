@@ -1,0 +1,54 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  /* line 5, ../sass/smartphone.scss */
+  .trends, .self-info {
+    display: none;
+  }
+
+  /* line 8, ../sass/smartphone.scss */
+  .bd .main {
+    width: 100%;
+    left: 0;
+  }
+  /* line 11, ../sass/smartphone.scss */
+  .bd .main .container {
+    padding: 0;
+    margin: 10px 0;
+  }
+  /* line 14, ../sass/smartphone.scss */
+  .bd .main .container .tweets {
+    background-color: white;
+  }
+  /* line 17, ../sass/smartphone.scss */
+  .bd .main .container nav {
+    background-color: white;
+  }
+  /* line 19, ../sass/smartphone.scss */
+  .bd .main .container nav .tips li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  /* line 23, ../sass/smartphone.scss */
+  .bd .main .container nav .tips li:first-child {
+    background-color: white;
+  }
+  /* line 26, ../sass/smartphone.scss */
+  .bd .main .container nav .tips li div {
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  /* line 34, ../sass/smartphone.scss */
+  header {
+    background-color: white;
+  }
+  /* line 37, ../sass/smartphone.scss */
+  header nav li:not(:first-child) {
+    display: none;
+  }
+  /* line 42, ../sass/smartphone.scss */
+  header .options input {
+    display: none;
+  }
+}

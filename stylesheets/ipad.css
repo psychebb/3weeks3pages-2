@@ -1,0 +1,12 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+  /* line 6, ../sass/ipad.scss */
+  .trends {
+    display: none;
+  }
+
+  /* line 9, ../sass/ipad.scss */
+  .bd .main {
+    width: 80%;
+  }
+}
