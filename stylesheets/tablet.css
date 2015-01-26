@@ -1,12 +1,17 @@
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /* Styles */
-  /* line 6, ../sass/tablet.scss */
-  .trends {
+  /* line 4, ../sass/tablet.scss */
+  .bd .trends {
     display: none;
   }
 
-  /* line 9, ../sass/tablet.scss */
+  /* line 7, ../sass/tablet.scss */
   .bd .main {
-    width: 80%;
+    width: inherit;
+  }
+  /* line 9, ../sass/tablet.scss */
+  .bd .main .container {
+    margin: 10px 0 10px 10px;
+    padding: 10px 0 10px 10px;
   }
 }
